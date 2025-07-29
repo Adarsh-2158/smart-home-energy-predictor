@@ -110,6 +110,9 @@ st.markdown(page_style, unsafe_allow_html=True)
 st.sidebar.title("📂 Navigation")
 selected_page = st.sidebar.radio("Go to", ["Home", "About", "Predict"])
 
+
+
+
 # Main content based on selection
 if selected_page == "Home":
     st.title("🏡 Smart Home Energy Forecasting")
@@ -126,6 +129,7 @@ if selected_page == "Home":
 
     Use the sidebar to explore different sections of this app.
     """)
+
 
 elif selected_page == "About":
     st.title("📘 About This Project")
