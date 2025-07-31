@@ -6,15 +6,16 @@ A machine learning project that predicts energy consumption in smart homes using
 
 ## 📂 Project Structure
 
-Energy-consumption/
+📁 Energy-consumption/
 │
-├── app.py # Streamlit app interface
-├── Smart_Home.ipynb # Jupyter notebook (data prep + model training)
-├── smart_home_energy_consumption_large.csv # Dataset
-├── rf_best_model.pkl # Final trained Random Forest model
-├── Smart_Home_LinRegrr_model.pkl # (ignored) Linear Regression model
-├── Smart_Home_RF_model.pkl # (ignored) Earlier RF model version
-└── .gitignore # To exclude specific files from version control
+├── app.py                                # Streamlit app interface
+├── Smart_Home.ipynb                      # Jupyter notebook (data prep + model training)
+├── smart_home_energy_consumption_large.csv  # Dataset
+├── rf_best_model.pkl                     # Final trained Random Forest model
+├── Smart_Home_LinRegr_model.pkl         # (ignored) Linear Regression model
+├── Smart_Home_RF_model.pkl              # (ignored) Earlier RF model version
+├── .gitignore                            # To exclude specific files from version control
+
 
 
 ---
