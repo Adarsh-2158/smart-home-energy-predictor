@@ -4,3 +4,5 @@ joblib
 matplotlib
 seaborn
 plotly
+scikit-learn
+numpy
