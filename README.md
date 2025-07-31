@@ -6,6 +6,7 @@ A machine learning project that predicts energy consumption in smart homes using
 
 ## 📂 Project Structure
 
+```bash
 📁 Energy-consumption/
 │
 ├── app.py                                # Streamlit app interface
@@ -15,7 +16,7 @@ A machine learning project that predicts energy consumption in smart homes using
 ├── Smart_Home_LinRegr_model.pkl         # (ignored) Linear Regression model
 ├── Smart_Home_RF_model.pkl              # (ignored) Earlier RF model version
 ├── .gitignore                            # To exclude specific files from version control
-
+```
 
 
 ---
