@@ -108,7 +108,7 @@ st.markdown(page_style, unsafe_allow_html=True)
 
 # Sidebar Navigation
 st.sidebar.title("📂 Navigation")
-selected_page = st.sidebar.radio("Go to", ["Home", "About", "Predict"])
+selected_page = st.sidebar.radio("Go to", ["Home", "About","Team Members","Predict"])
 
 
 
@@ -180,6 +180,74 @@ elif selected_page == "About":
     </ul>
     """, unsafe_allow_html=True)
 
+elif selected_page == "Team Members":
+    st.title("👥 Meet the Team")
+
+    team_members = [
+        {
+            "name": "Adarsh Srivastava",
+            "role": "Model Building & Model Training",
+            "github": "https://github.com/Adarsh-2158",
+            "linkedin": "https://www.linkedin.com/in/adarsh-kumar-srivastava/",
+            "email": "adarshkumarsrivastava56@gmail.com",
+        },
+        {
+            "name": "Ayush Patel",
+            "role": "Data Preprocessing & Frontend Developer",
+            "github": "https://github.com/ayush42patel",
+            "linkedin": "https://www.linkedin.com/in/ayush-42-patel/",
+            "email": "ayush42patel@gmail.com"
+        },
+        {
+            "name": "Aditya Nigam",
+            "role": "Visualization & Presentation",
+            "github": "https://github.com/adityanigam28",
+            "linkedin": "https://www.linkedin.com/in/aditya-nigam-838a8527a/",
+            "email": "adityanigam508@gmail.com"
+        },
+        {
+            "name": "Parveen Chaudhary",
+            "role": "Documentation",
+            "github": "https://github.com/Parveen-8289",
+            "linkedin": "https://www.linkedin.com/in/praveen-chaudhary-1a6a42314/",
+            "email": "praveenchaudhary067@gmail.com"
+        }
+    ]
+
+    st.markdown("""
+        <style>
+            .card {
+                background-color: #f0f2f6;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .name {
+                font-size: 20px;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+            .role {
+                color: #7f8c8d;
+                margin-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    for member in team_members:
+        st.markdown(f"""
+        <div class="card">
+            <div class="name">{member['name']}</div>
+            <div class="role">{member['role']}</div>
+            🔗 <a href="{member['github']}" target="_blank">GitHub</a> | 
+            💼 <a href="{member['linkedin']}" target="_blank">LinkedIn</a> | 
+            📧 <a href="mailto:{member['email']}">{member['email']}</a>
+        </div>
+        """, unsafe_allow_html=True)
 
 elif selected_page == "Predict":
     model = joblib.load("Smart_Home_RF_best.pkl")  # Make sure this path is correct
