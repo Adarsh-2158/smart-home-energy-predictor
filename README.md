@@ -38,6 +38,10 @@ A machine learning project that predicts energy consumption in smart homes using
 
 ---
 
+## 🔗 Online Link
+https://smartenergyconsumptionforecast-asapanpc.streamlit.app/
+---
+
 ## 🚀 How to Run
 
 1. Clone the repository:
